@@ -1,21 +1,21 @@
-# 第3章要点
+# Chapter 3 Key Points
 
-### 1. 从 NFA、DFA 到正则表达式的转换
+### 1. Conversion from NFA, DFA to regular expressions
 
 http://courses.engr.illinois.edu/cs373/sp2009/lectures/lect_08.pdf
 
-### 2. KMP 及其扩展算法(p87)
+### 2. KMP and its extended algorithm (p87)
 
-参考 matrix 的博文 [KMP算法详解](http://www.matrix67.com/blog/archives/115)。文中提供了例子，比较容易理解。
+Refer to matrix's blog post [Detailed explanation of KMP algorithm](http://www.matrix67.com/blog/archives/115).Examples are provided in the article to make it easier to understand.
 
-### 3. 字符串处理算法的效率(p103)
+### 3. Efficiency of string processing algorithm (p103)
 
-对于每个构造得到的 DFA 状态，我们最多必须构造 4|r| 个新状态
+For each constructed DFA state, we must construct at most 4|r| new states
 
-### 4. DFA 模拟中的时间和空间的权衡(p116)
+### 4. Time and space trade-offs in DFA simulation (p116)
 
-图 3-66 表示的算法
+The algorithm shown in Figure 3-66
 
-### 5. 最小化一个 DFA 的状态数量（p115）
+### 5. Minimize the number of states of a DFA (p115)
 
-注意图 3-64 的第 4 行：“状态 s 和 t 在 a 上的转换都到达 Π 中的同一组”，而不是到达同一个状态。如果通过是否到达同一个状态来判定，那么如果 s 和 t 在 a 上的转换到了两个不同但不能区分的状态时，就会认为 s 和 t 是可区分的。
+Note line 4 of Figure 3-64: "Transitions on a from states s and t both arrive at the same group in Π", not at the same state.If it is determined by whether they reach the same state, then if s and t transition to two different but indistinguishable states on a, s and t will be considered to be distinguishable.
